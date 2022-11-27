@@ -400,13 +400,13 @@ body {
   .menu__body::before {
     content: "";
     position: fixed;
-    top: 0;
-    left: -100%;
+    top: -100%;
+    left: 0;
     width: 100%;
     background-color: #000;
-    -webkit-transition: left 0.3s ease 0s;
-    -o-transition: left 0.3s ease 0s;
-    transition: left 0.3s ease 0s;
+    -webkit-transition: top 0.3s ease 0s;
+    -o-transition: top 0.3s ease 0s;
+    transition: top 0.3s ease 0s;
   }
 
   .menu-open .menu__body {
@@ -415,7 +415,7 @@ body {
 
   .menu-open .menu__body::before {
     content: "";
-    left: 0;
+    top: 0;
   }
 
   .menu__list {
